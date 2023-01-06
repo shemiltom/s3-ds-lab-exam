@@ -1,0 +1,25 @@
+import numpy as np
+a=np.array([
+    [1,4,3],
+    [5,7,8],
+    [4,7,6]
+])
+print("elements of a")
+print(a)
+
+b=np.array([
+    [2],
+    [4],
+    [7]
+])
+print("elements of b")
+print(b)
+ai=np.linalg.inv(a)
+print('inverse of array a')
+print(ai)
+x=np.linalg.solve(ai,b)
+print("solved equation")
+print(x)
+b2=np.linalg.solve(a,x)
+print("value of b2")
+print(b2)
